@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+div.contents {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+div#sidemenu_wrap {
+	top: 70px;
+	/*left: 0;*/
+	height: 100%;
+	width: 250px;
+	z-index: 999;
+	background-color: #ffffff;
+}
+
+div#inputarea_wrap {
+	top: 70px;
+	/*left: 250px;*/
+	width: 700px;
+	height: 120px;
+	padding-left: 250px;
+	z-index: 998;
+	background-color: #ffffff;
+	border-bottom:1px solid #d4d2d2
+}
+
+div.tweet_area {
+	position: relative;
+	top: 190px;
+	left: 250px;
+	padding: 0px 30px 20px 0px;
+	max-width:750px;
+}
+
+div.tweet_group_wrapp {
+	/*margin: 0 auto;*/
+	max-width:700px;
+}
+
+div#sidemenu_wrap > ul {
+	list-style-type: none;
+	margin: 20px 0px 20px 20px;
+}
+
+div#sidemenu_wrap > ul > li[class*="selected"] {
+	color: #000000;
+}
+
+div#sidemenu_wrap > ul > li {
+	height: 49px;
+	padding: 15px 0px 0px 60px;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+div#sidemenu_wrap > ul > li:hover {
+	cursor: pointer;
+	color: #000000;
+}
+
+div#sidemenu_wrap > ul > li.home_selected {
+	background: url(../img/home_48x_selected.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.home {
+	background: url(../img/home_48x.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.notice_selected {
+	background: url(../img/at_48x_selected.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.notice {
+	background: url(../img/at_48x.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.like_selected {
+	background: url(../img/heart_48x_selected.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.like {
+	background: url(../img/heart_48x.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.account_selected {
+	background: url(../img/user_48x_selected.png) no-repeat 0 1px;
+}
+
+div#sidemenu_wrap > ul > li.account {
+	background: url(../img/user_48x.png) no-repeat 0 1px;
+}
+
+div.exit {
+	padding-left: 30px;
+}
+
+div.exit > img#exitarrow {
+	vertical-align: -6px;
+}
+
+div.exit > img#exitplane {
+	position: relative;
+	top: 11px;
+}
+
+img.logout:hover {
+	-moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+div.input_area {
+	position: relative;
+	vertical-align: top;
+	padding-top: 20px;
+	height: 100px;
+}
+
+textarea#input_tweetbody {
+	display: inline-block;
+	width: 500px;
+	height: 60px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.input_area > div.wrapper {
+	position: relative;
+	top: -2px;
+	height: 64px;
+	display: inline-block;
+	padding-bottom: 2px;
+}
+
+button[type="submit"] {
+	width: 55px;
+	height: 35px;
+	padding: 5px 10px 6px 10px;
+}
+
+p#char_count {
+	margin-top: 9px;
+	color: #ff7c80;
+	font-size: 12pt;
+}

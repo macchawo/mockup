@@ -1,0 +1,259 @@
+@CHARSET "UTF-8";
+
+/********************
+ 初期化
+********************/
+html, div, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body, input, button, textarea {
+	font-family: Meiryo, メイリオ, sans-serif;
+	font-size: 10pt;
+	margin: 0;
+}
+
+/********************
+ 汎用
+********************/
+div.fixed_area {
+	position: fixed;
+}
+
+.float-l {
+	float: left;
+}
+
+/*floatの解除*/
+.clearfix:after {
+    display:block;
+    clear:both;
+    height:0px;
+    visibility:hidden;
+    content:".";
+}
+
+.display_none {
+	display: none;
+}
+
+/********************
+ヘッダー
+********************/
+header {
+	position: fixed;
+	top: 0;
+	left:0;
+	height : 70px;
+	padding-left: 20px;
+	width: 100%;
+	z-index: 1000;
+	background-color : #66ffcc;
+}
+
+div.title {
+	height : 100%;
+	padding-top : 5px;
+	font-family : 'Lily Script One', cursive;
+	font-size : 40px;
+}
+
+.top {
+	vertical-align : baseline;
+	text-align: center;
+}
+
+.logon {
+	vertical-align : baseline;
+	text-align: left;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+/********************
+入力関係
+********************/
+p.caption {
+	padding: 5px 5px 3px 5px;
+}
+
+input[type="text"], input[type="password"], textarea {
+	border-radius: 5px; /* CSS3草案 */  
+    -webkit-border-radius: 5px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px; /* Firefox用 */
+    border: 1px solid #afabab;
+    padding: 2px;
+}
+
+button[type="submit"] {
+	font-size: 11pt;
+	font-weight: 900;
+	background-color: #66ffcc;
+	padding: 5px 10px 6px 7px;
+	border: none;
+	border-radius: 5px; /* CSS3草案 */  
+    -webkit-border-radius: 5px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px; /* Firefox用 */
+}
+
+/********************
+投稿関係
+********************/
+/* アイコン */
+div.user_icon {
+	position: relative;
+	top: -25px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 10px; /* CSS3草案 */  
+    -webkit-border-radius: 10px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px; /* Firefox用 */
+    font-family : 'Lily Script One', cursive;
+    font-size : 32px;
+    background-color: #ffff99;
+    text-align: center;
+}
+
+div.user_icon > p {
+	padding-top: 10px;
+}
+
+div.icon {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px; /* CSS3草案 */  
+    -webkit-border-radius: 10px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px; /* Firefox用 */
+    font-family : 'Lily Script One', cursive;
+    font-size : 20px;
+    background-color: #ffff99;
+    text-align: center;
+}
+
+div.icon > p {
+	padding-top: 10px;
+}
+
+div.tweet_group {
+	border-bottom: 1px solid #afabab;
+	padding: 5px 0px;
+}
+
+div.tweet {
+	position: relative;
+	padding: 5px 5px 5px 55px;
+	min-height: 50px;
+}
+
+/* ユーザー名、投稿時間 */
+div.tweet_info {
+	height: 15px;
+	margin-bottom: 10px;
+}
+
+div.tweet_info > p {
+	display: inline-block;
+}
+
+p.user_name {  /* 最大の長さを決める */
+	padding-left: 10px;
+	font-weight: 900;
+}
+
+p.user_id { /* 最大の長さを決める */
+	padding-left: 5px;
+}
+
+p.tweet_date {
+	padding-left: 10px;
+}
+
+/* 投稿本文 */
+p.tweet_body_text { /* 長さ決める */
+	padding-left: 10px;
+}
+
+span.at_id {
+	margin-right: 10px;
+	padding-bottom: 0px;
+	color: #4472c4;
+	cursor: default;
+}
+
+/* 投稿への操作 */
+div.tweet_command {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+div.tweet_command > ul {
+	list-style-type: none;
+}
+
+div.tweet_command > ul > li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+div.tweet_command > ul > li.reply {
+	width: 25px;
+	height: 25px;
+	background: url(../img/arrow-back.png) no-repeat 0 1px;
+}
+
+div.tweet_command > ul > li.like {
+	width: 25px;
+	height: 25px;
+	background: url(../img/heart.png) no-repeat 0 1px;
+}
+
+div.tweet_command > ul > li.delete {
+	width: 25px;
+	height: 25px;
+	background: url(../img/trash.png) no-repeat 0 1px;
+}
+
+div.tweet_command > ul > li.userinfo {
+	width: 25px;
+	height: 25px;
+	background: url(../img/user.png) no-repeat 0 1px;
+}
+
+/********************
+メッセージ関係
+********************/
+/* エラーメッセージ */
+span.err {
+	color: #ff7c80;
+}
+
+/********************
+フッター
+********************/
+footer {
+	position: fixed;
+	bottom: 0;
+	height : 25px;
+	padding-top: 6px;
+	width: 100%;
+	text-align: right;
+	background-color : #66ffcc;
+	z-index: 1000;
+}
+
+footer div {
+	display: inline-block;
+	background-color: #ffffff;
+	width: 130px;
+	text-align: center;
+	margin-right: 10px;
+	border-radius:10px; /* CSS3草案 */  
+    -webkit-border-radius: 10px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px; /* Firefox用 */	
+}

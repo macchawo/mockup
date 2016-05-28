@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+div.fixed_area {
+	top: 70px;
+	left: 0;
+	height: 190px;
+	width: 100%;
+	z-index: 999;
+	background-color: #ffffff;	
+}
+
+div.input_area {
+	padding: 20px 30px;	
+}
+
+div.input_area > div.parents {
+	position: relative;
+	width: 550px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+div.inputs {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	margin: 0 auto;
+	width: 300px;
+	text-align: left;
+}
+
+div.buttons {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	margin: 0 auto;
+	width: 250px;
+	text-align: left;
+}
+
+button[type="submit"] {
+	padding: 5px 10px 6px 7px;
+}
+
+button > img {
+	vertical-align: -5px;
+}
+
+input {
+	width: 200px;
+}
+
+p.caption {
+	padding-left: 27px;
+}
+
+p.userid {
+	background: url(../img/user.png) no-repeat 0 1px;
+}
+
+p.password {
+	background: url(../img/key-outline.png) no-repeat 0 1px;
+	margin-top: 15px;
+}
+
+span.link {
+	margin-left: 10px;
+	padding-bottom: 0px;
+	color: #4472c4;
+	border-bottom: 1px solid #4472c4;
+	cursor: pointer;
+}
+
+div.tweet_area {
+	position: relative;
+	top:280px;
+	padding: 0px 30px 20px 30px;
+}
+
+div.tweet_group_wrapp {
+	margin: 0 auto;
+	max-width:700px;
+}
+
+/* エラーメッセージ */
+span.message {
+	display: none;
+}

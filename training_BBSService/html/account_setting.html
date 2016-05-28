@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href='https://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/common.css" type="text/css" />
+<link rel="stylesheet" href="../css/common_logon.css" type="text/css" />
+<link rel="stylesheet" href="../css/account.css" type="text/css" />
+<script type="text/javascript" src="../script/jquery/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="../script/account.js"></script>
+<script type="text/javascript" src="../script/common_logon.js"></script>
+<title>ホーム</title>
+</head>
+<body>
+	<div class="outline">
+		<header>
+			<div class="title logon">post!</div>
+		</header>
+		<div class="contents">
+			<div id="sidemenu_wrap" class="fixed_area">
+				<ul>
+					<li class="home">ホーム</li>
+					<li class="notice">通知</li>
+					<li class="like">お気に入り</li>
+					<li class="account_selected">アカウント</li>
+				</ul>
+				<div class="exit">
+					<img id="exitplane" class="logout" alt="logout" src="../img/exitplane.png">
+					<img id="exitarrow" class="display_none" alt="logout" src="../img/exitarrow.png">
+					<span class="display_none">ログアウト</span>
+				</div>
+			</div>
+			<div id="submenu_wrap" class="fixed_area">
+				<div class="submenu_area">
+					<ul>
+						<li class="tweet">ツイート</li>
+						<li class="follow">フォロー</li>
+						<li class="follower">フォロワー</li>
+						<li class="setting selected">アカウント設定</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contents_area">
+				<div class="user_icon"><p>p!</p></div>
+				<div class="input_area">
+					<div class="wrapp">
+						<p class="caption">ユーザーID</p><p class="coron">:</p>
+						<span>taro___</span>
+					</div>
+					<div class="wrapp">
+						<p class="caption">パスワード</p><p class="coron">:</p>
+						<span>現パスワード</span>
+						<div class="inner">
+							<input type="password" name="input_current_password">
+							<br>
+							<span>新パスワード</span>
+							<br>
+							<input type="password" name="input_new_password">
+						</div>
+					</div>
+					<div class="wrapp">
+						<p class="caption">公開設定</p><p class="coron">:</p>
+						<input type="radio" name="suitably_setting" value="public" class="display_none">
+						<img alt="" src="../img/input-checked.png" class="suitably_setting public"><span>公開</span>
+						<input type="radio" name="suitably_setting" value="private" class="display_none">
+						<img alt="" src="../img/input-unchecked.png" class="suitably_setting private"><span>非公開（フォロワーのみ）</span>
+					</div>
+					<div id="save_button_wrapp">
+						<button type="submit" name="save" id="save">保存</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>icon BY <a href="http://typicons.com/">Typicons</a></div>
+		</footer>
+	</div>
+</body>
+</html>

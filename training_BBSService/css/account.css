@@ -1,0 +1,208 @@
+@CHARSET "UTF-8";
+
+div#submenu_wrap {
+	top: 70px;
+	/*left: 250px;*/
+	width: 700px;
+	height: 120px;
+	padding-left: 250px;
+	z-index: 998;
+	background-color: #ffffff;
+	border-bottom:1px solid #d4d2d2
+}
+
+div.submenu_area {
+	position: relative;
+	vertical-align: top;
+	padding-top: 60px;
+	height: 60px;
+}
+
+div.submenu_area > ul > li.selected {
+	border-top: 5px solid #66ffcc;
+}
+
+div.submenu_area > ul > li {
+	display: inline-block;
+	cursor: pointer;
+	height: 33px;
+	padding: 8px 0px 0px 35px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+div.submenu_area > ul > li:hover {
+	border-top: 5px dotted #66ffcc;
+}
+
+div.submenu_area > ul > li.selected:hover {
+	border-top: 5px solid #66ffcc;
+}
+
+div.submenu_area > ul > li.tweet {
+	background: url(../img/message-typing_32x.png) no-repeat 0 1px;
+}
+
+div.submenu_area > ul > li.follow {
+	background: url(../img/arrow-left-outline_32x.png) no-repeat 0 1px;
+}
+
+div.submenu_area > ul > li.follower {
+	background: url(../img/arrow-right-thick_32x.png) no-repeat 0 1px;
+}
+
+div.submenu_area > ul > li.setting {
+	background: url(../img/cog_32x.png) no-repeat 0 1px;
+}
+
+div.contents_area {
+	position: relative;
+	top: 190px;
+	left: 250px;
+	padding: 0px 30px 20px 0px;
+	max-width:750px;
+}
+
+/********************
+フォロー・フォロワー
+********************/
+div.user_wrap {
+	border-bottom: 1px solid #afabab;
+	padding: 5px 0px;
+	max-width: 700px;
+}
+
+div.user {
+	position: relative;
+	padding: 5px 5px 5px 55px;
+	min-height: 50px;
+}
+
+div.user > div.icon {
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
+
+div.user_info {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	padding-top: 6px;
+	height: 48px;
+}
+
+div.user_info > p.user_name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+div.user_info > p.user_id {
+	padding-left: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+div.user_status {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
+	margin-left: 30px;
+	height: 48px;
+}
+
+div.user_status > p {
+	display: inline-block;
+	text-indent: -1em;
+}
+
+div.user_status > img {
+	vertical-align: -8px;
+}
+
+/********************
+ステータス変更コマンド
+********************/
+div.status_command {
+	position: relative;
+	padding: 5px 8px;
+	width: 120px;
+	border-radius: 5px; /* CSS3草案 */  
+    -webkit-border-radius: 5px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px; /* Firefox用 */
+	background-color: #575353;
+	z-index: 2000
+}
+
+div.status_command:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #575353;
+  border-bottom: 10px solid transparent;
+  z-index: 2000;
+}
+
+div.status_command li {
+	padding: 2px;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+div.status_command li:last-child {
+	border-bottom: none;
+}
+
+/********************
+アカウント設定
+********************/
+div.user_icon {
+	top: 10px;
+}
+
+div.input_area {
+	display: inline-block;
+	padding: 20px 10px;	
+}
+
+p.caption {
+	display: inline-block;
+	width: 10em;
+}
+
+p.coron {
+	display: inline-block;
+	width: 1em;
+}
+
+div.inner {
+	padding-left: 12em;
+}
+
+input[type="password"] {
+	margin-bottom: 8px;
+}
+
+img.suitably_setting {
+	vertical-align: -7px;
+}
+
+img.public {
+	margin-left: -5px;
+}
+
+img.private {
+	margin-left: 10px;
+}
+
+div#save_button_wrapp {
+	margin-top: 50px;
+	text-align: center;
+}
