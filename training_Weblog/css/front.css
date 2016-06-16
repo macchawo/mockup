@@ -1,0 +1,507 @@
+@CHARSET "UTF-8";
+
+/*---------------------------------------------------------
+ base setting
+----------------------------------------------------------*/
+body {
+	margin: 0;
+	padding:0;
+	width: 100%;
+	/*background-color: #E6E6E6;*/
+	font-family: Meiryo,"Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	line-height: 1.5em;
+}
+
+img,object {
+	border: 0;
+	vertical-align: bottom;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*---------------------------------------------------------
+ header
+----------------------------------------------------------*/
+header {
+	position: relative;
+	width: 100%;
+	min-width: 1000px;
+	height: 160px;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+header div.blog-title {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 5px 0 15px 0;
+	height: 90px;
+	width: 550px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50px; /* CSS3草案 */  
+    -webkit-border-radius: 50px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 50px; /* Firefox用 */
+}
+
+header div.icon-source {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	font-size: 10px;
+}
+
+header div.icon-source a {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 42px;
+	height: 35px;
+	padding-top: 7px;
+	background-color: #ffffff;
+	border-radius: 50%; /* CSS3草案 */  
+    -webkit-border-radius: 50%; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 50%; /* Firefox用 */
+}
+
+header div.icon-source a img {
+	height: 30px;
+}
+
+/*---------------------------------------------------------
+ 画面共通要素
+----------------------------------------------------------*/
+div.container {
+	margin: auto;
+	width: 1000px;
+	height: 100%;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+div.main {
+	float: left;
+	width: 670px;
+	padding: 25px 15px 15px 15px;
+	position: relative;
+}
+
+div.main div.title {
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	padding: 10px 0 0 48px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* 最近のエントリー */
+div.main div.recent-entry {
+	background-image: url(../img/flag_48x.png);
+}
+
+/* エントリー詳細（記事タイトル） */
+div.main div.entry-detail {
+	background-image: url(../img/entry_48x.png);
+}
+
+/* 月別アーカイブ */
+div.main div.month-entry {
+	background-image: url(../img/folder_48x.png);
+	background-position: 0px -5px;
+}
+
+/* カテゴリー */
+div.main div.category-entry {
+	background-image: url(../img/tag_48x.png);
+	background-position: 0px -3px;
+	background-size: 43px;
+}
+
+/* サイドメニュー */
+div.side {
+	float:right;
+	width: 210px;
+	padding: 30px 15px 30px 5px;
+}
+
+div.side-title {
+	padding: 5px 0 5px 10px;
+	border-bottom: 5px solid;
+}
+
+/* サイドメニュー：アーカイブ */
+div.arcive-area div.side-title {	
+	border-bottom-color: #99ffcc;
+}
+
+div.arcive-area div.arcive {
+	margin 0 auto;
+	background-image: url(../img/folder_24x.png);
+	background-repeat: no-repeat;
+	padding: 2px 0 0 27px;
+	font-weight: bold;
+	width: 100px;
+}
+
+div.aricive-list {
+	padding: 10px 15px;
+}
+
+ul.arcive {
+	list-style-type: none;
+}
+
+li.year {
+	cursor: default;
+}
+
+li.month {
+	padding-left: 20px;
+	padding-top: 2px;
+	padding-bottom:4px;
+}
+
+li.month:last-child {
+	margin-bottom: 3px;
+}
+
+div.marker-top {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-right: 5px;
+	border-style: solid;
+	border-width: 0 7.5px 10px 7.5px;
+	border-color: transparent transparent #ff9999 transparent;
+}
+
+div.marker-bottom {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-right: 5px;
+	border-width: 10px 7.5px 0 7.5px;
+	border-color: #bcbbbc transparent transparent transparent;
+}
+
+/* サイドメニュー：カテゴリー */
+div.category-area div.side-title {
+	border-bottom-color: #ffff99;	
+}
+
+div.category-area div.category {
+	background-image: url(../img/tag_24x.png);
+	background-repeat: no-repeat;
+	padding: 0 0 0 27px;
+	font-weight: bold;
+	width: 100px;
+}
+
+div.category-list {
+	padding: 10px 15px;
+}
+
+div.aricive-list a {
+	color: #9e9e9e;
+	text-decoration: none;
+	border-bottom: #9e9e9e 1px dashed;
+}
+
+div.aricive-list a:hover {
+	color: #9e9e9e;
+	text-decoration: none;
+	border-bottom: #9e9e9e 1px solid;
+}
+
+a.category {
+	display: inline-block;
+	background-color: #edeced;
+	padding: 3px 7px 1px 7px;
+	margin-bottom: 6px;
+	border-radius:10px; /* CSS3草案 */  
+    -webkit-border-radius: 10px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px; /* Firefox用 */	
+}
+
+a.category:hover {
+	background-color: #ff9999;
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+/*---------------------------------------------------------
+ 最近のエントリー画面
+----------------------------------------------------------*/
+div.main div.entry-list, div.main div.entry-body {
+	padding: 15px 10px 10px 20px;
+}
+
+div.main div.entry-list a {
+	display: inline-block;
+	color: #ff6666;
+	text-decoration: none;
+	margin-top: 8px;
+	border-bottom: #ff6666 1px dashed;
+}
+
+div.main div.entry-list a:hover {
+	border-bottom: #ff6666 1px solid;
+}
+
+div.main div.entry-list a:visited {
+	color: #9e9e9e;
+	border-bottom: #9e9e9e 1px dashed;
+}
+
+div.main div.entry-list a:visited a:hover {
+	color: #9e9e9e;
+	border-bottom: #9e9e9e 1px solid;
+}
+
+span.reg-date {
+	font-size: 10pt;
+}
+
+/*---------------------------------------------------------
+ エントリー詳細（各記事）画面
+----------------------------------------------------------*/
+div.entry-info-wrapp {
+	text-align: right;
+}
+
+div.reg-date {
+	display: inline-block;
+	font-weight: bolder;
+	padding-left: 26px;
+	background-repeat: no-repeat;
+	background-image: url(../img/calender_24x.png);
+}
+
+div.setting-category {
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: bolder;
+	padding-left: 26px;
+	background-repeat: no-repeat;
+	background-image: url(../img/tag_24x.png);
+}
+
+div.back {
+	margin-top: 8px;
+	text-align: right;	
+}
+
+div.back a {
+	background-color: #ffff99;
+	background-image: url(../img/arrow-back-outline_24x.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	width: 36px;
+	height: 36px;
+	border-radius:50%; /* CSS3草案 */  
+    -webkit-border-radius: 50%; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 50%; /* Firefox用 */
+}
+
+div.back a:hover {
+	background-color: #99ffcc;
+}
+
+/*---------------------------------------------------------
+ アーカイブ画面、カテゴリー画面
+----------------------------------------------------------*/
+div.view-tree {
+	text-align: right;
+	position: absolute;
+	height: 36px;	
+	width: 670px;
+	top: 0px;
+}
+
+div.home {
+	display: inline-block;
+	font-size: 10pt;
+	height: 36px;
+	width: 100%;
+}
+
+div.home a {
+	background-color: #ffff99;
+	background-image: url(../img/home_24x.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	width: 36px;
+	height: 36px;
+	margin-top: 8px;
+	margin-right: 6px;
+	border-radius:50%; /* CSS3草案 */  
+    -webkit-border-radius: 50%; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 50%; /* Firefox用 */
+}
+
+div.home a:hover {
+	background-color: #99ffcc;
+}
+
+div.current {
+	display: inline-block;
+	position: relative;
+	top: -11px;
+}
+
+/* 記事一覧 */
+div.entry-wrapper {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px; 
+	border-bottom: 1px dotted #9E9E9E;
+}
+
+div.entry-wrapper div.entry-title {
+	font-weight: bolder;
+	font-size: 13pt;
+}
+
+div.entry-wrapper div.entry-title a {
+	color: #ff6666;
+	text-decoration: none;
+	border-bottom: #ff6666 1px dashed;
+}
+
+div.entry-wrapper div.entry-title a:hover {
+	border-bottom: #ff6666 1px solid;
+}
+
+div.entry-wrapper div.entry-title a:visited {
+	color: #9e9e9e;
+	border-bottom: #9e9e9e 1px dashed;
+}
+
+div.entry-wrapper div.entry-title a:visited a:hover {
+	color: #9e9e9e;
+	border-bottom: #9e9e9e 1px solid;
+}
+
+div.entry-wrapper div.entry-body {
+	padding: 10px 10px 10px 20px;
+}
+
+div.entry-wrapper div.read-more a {
+	padding: 3px 13px 1px 1px;
+	color: #000000;
+	text-decoration: none;
+}
+
+div.entry-wrapper div.read-more a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+div.read-more {
+	padding-left: 5px;
+	font-size: 11pt;
+}
+
+div.entry-wrapper div.read-more a:before {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-right: 5px;
+	border-style: solid;
+	border-width: 7.5px 0px 7.5px 10px;
+	border-color: transparent transparent transparent #ff6666;
+}
+
+div.entry-wrapper div.read-more a:hover {
+	background-color: #edeced;
+	border-radius:10px; /* CSS3草案 */  
+    -webkit-border-radius: 10px; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 10px; /* Firefox用 */	
+}
+
+div.entry-wrapper div.read-more a:hover:before {
+	border-color: transparent transparent transparent #edeced;
+}
+
+/* ページング */
+div.pager-wrapper {
+	text-align: right;
+}
+
+div.pager-wrapper a {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: #000000;
+	font-size: 13px;
+	margin-right: 2px;
+	margin-left: 2px;
+	width: 25px;
+	height: 25px;
+	border-radius:50%; /* CSS3草案 */  
+    -webkit-border-radius: 50%; /* Safari,Google Chrome用 */  
+    -moz-border-radius: 50%; /* Firefox用 */
+}
+
+div.pager-wrapper a:hover {
+	background-color: #ffff99;
+}
+
+div.pager-wrapper a.first:hover {
+	background-color: #99ffcc;
+}
+
+div.pager-wrapper a.last:hover {
+	background-color: #99ffcc;
+}
+
+div.pager-wrapper a.current {
+	background-color: #edeced;
+}
+
+div.pager-wrapper a.current:hover {
+	background-color: #edeced;
+}
+
+/*---------------------------------------------------------
+ footer
+----------------------------------------------------------*/
+footer {
+/*
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+*/
+	height: 25px;
+	padding: 5px;
+	clear: both;
+	background-color: #ff9999;
+	text-align: center;
+}
+
+footer address {
+	font-family: 'Advent Pro', sans-serif;
+	color: #FFF;
+}
+

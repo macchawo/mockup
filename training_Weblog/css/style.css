@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*===================================
+* style.css
+* 01:base setting
+* 02:wrapper
+* 03:header
+* 04:container
+* 05:content
+* 06:aside
+* 07:footer
+===================================*/
+
+/*---------------------------------------------------------
+ base setting
+----------------------------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #E6E6E6;
+	font-family: Meiryo,"Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+	line-height: 1.5em;
+}
+
+a:link {
+	color: #00a;
+}
+a:visited {
+	color: #066;
+}
+a:hover {
+	color: #900;
+	text-decoration: underline;
+}
+a:active {
+	color: #900;
+	text-decoration: underline;
+}
+
+img,object {
+	border: 0;
+	vertical-align: bottom;
+}
+
+/*---------------------------------------------------------
+ wrapper
+----------------------------------------------------------*/
+#wrapper {
+	width: 900px;
+	margin: 0px auto;
+}
+
+/*---------------------------------------------------------
+ header
+----------------------------------------------------------*/
+header {
+	width: 100%;
+	height: 150px;
+	float: left;
+	background: linear-gradient(#b8d5f1, #236ab1);
+}
+
+header h1,
+header h2 {
+	color: #FFF;
+	text-align: center;
+}
+
+header h1 {
+	margin-top: 35px;
+}
+
+header h2 {
+	font-weight: normal;
+}
+
+/*---------------------------------------------------------
+ container
+----------------------------------------------------------*/
+#container {
+	width: 100%;
+	float: left;
+	clear: left;
+	background-color: #FFF;
+	magin: 0px;
+	padding: 0px;
+}
+
+/*--------------------------------------------------------
+ content
+----------------------------------------------------------*/
+#content {
+	width: 600px;
+	margin: 0px;
+	padding: 15px;
+	float: left;
+}
+
+#content #topic_path {
+	text-align: right;
+}
+
+#content .page_title {
+	padding-left: 10px;
+	border-left: 5px solid #333;
+	font-family: Georgia;
+	font-size: 150%;
+}
+
+#content .page_footer {
+	text-align: right;
+}
+
+#content .entry_title {
+	/*background: url(../images/ico_entry_title.gif) top left no-repeat;*/
+	/*padding-left: 10px;*/
+	/*border-left: 5px solid #95bfea;*/
+	font-size: 125%;
+}
+
+#content .article {
+	paddin-bottom: 10px;
+	border-bottom: 1px dotted #666;
+}
+
+article {
+	paddin-bottom: 10px;
+	border-bottom: 1px dotted #666;
+}
+
+#content .article_desc {
+	margin-bottom: 5px;
+}
+
+#content .article_footer {
+	margin-top: 5px;
+}
+
+#content #pager {
+	padding: 10px 0px;
+	text-align: right;
+}
+
+/*--------------------------------------------------------
+ aside
+----------------------------------------------------------*/
+aside {
+	width: 240px;
+	padding: 15px;
+	float: right;
+}
+
+aside #archive {
+	width: 240px;
+	margin-bottom: 15px;
+	border: 1px solid #CCC;
+}
+
+aside #archive #archive_head {
+	padding: 5px;
+	background-color: #DDD;
+	text-align: center;
+}
+
+aside #archive #archive_doby {
+	padding: 0px 15px;
+}
+
+aside #archive p {
+	margin: 5px 0px;
+}
+
+aside #category {
+	width: 240px;
+	margin-bottom: 15px;
+	border: 1px solid #CCC;
+}
+
+aside #category #category_head {
+	padding: 5px;
+	background-color: #DDD;
+	text-align: center;
+}
+
+aside #category #category_doby {
+	padding: 0px 15px;
+}
+
+aside #category p {
+	margin: 5px 0px;
+}
+
+/*---------------------------------------------------------
+ footer
+----------------------------------------------------------*/
+footer {
+	width: 860px;
+	padding: 20px;
+	float: left;
+	clear: both;
+	background-color: #236ab1;
+	text-align: center;
+}
+
+footer address {
+	color: #FFF;
+}
+
